@@ -1,0 +1,30 @@
+*{
+    
+  box-sizing: border-box;
+}
+.cont
+{
+  display: flex;
+  flex: left;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  justify-content: space-evenly;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #8888;
+      box-shadow: 0 0 10px #8888;
+      margin-bottom: 12px;
+      margin-top: 12px;
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+.quo
+{
+  width: 10%;
+  margin-top: 10px ;
+  margin-bottom: 10px;
+}
+.gap{
+  margin-left: 10vh;
+}
+
