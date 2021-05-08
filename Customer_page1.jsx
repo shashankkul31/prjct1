@@ -3,6 +3,7 @@ import React from "react";
 
 import Button from '@material-ui/core/Button';
 import  "./index.css"
+import Footer from "./Footer";
 
 
 const car= [{
@@ -23,16 +24,16 @@ function Customer_page1()
 {
     return (
       <>
-      <p>Welcome,</p>
+      <p style={{marginLeft:"20vh",marginTop:"10vh"}}>Welcome,</p>
       {/* Name     */}
-    <h1>Adam Steve!</h1>
-    <p>Here is your bid list</p>
+    <h1 style={{marginLeft:"20vh"}}>Adam Steve!</h1>
+    <p style={{marginLeft:"20vh"}}>Here is your bid list</p>
     <br />
     <br />
     <br />
     <br />
     <br />
-        <div>
+        <div style={{marginLeft:"20vh",marginRight:"22vh"}}>
         {car.map((data)=>{
           return(
           <div className="cont"> 
@@ -58,12 +59,10 @@ function Customer_page1()
     
         </div>
         <br />
-        <br />
-        <br />
         <center>
         <Button variant="contained" >Add car</Button>
         </center>
-        
+        <Footer />
         </>
       );
 
