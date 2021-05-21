@@ -1,85 +1,81 @@
-import React from  "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Footer.css";
+const Footer = () => {
+  return (
+    <div className="footer">
+      <footer>
+        <div className="container">
+          <div className="footerdata">
+            <div>
+              <h3>Services</h3>
+              <ul>
+                <li>
+                  <a href="#">Terms</a>
+                </li>
+                <li>
+                  <a href="#">Help</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="#">Cookie policy</a>
+                </li>
+                <li>
+                  <a href="#">Get the app</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
 
-
-function Footer()
-{
-    return(
-
-        <>
-       <div style={{backgroundColor :"#1E90FF",height:"35vh",width:"600vh"}}>
-        <div >
-            <h4 style={{marginLeft:"20vh",marginTop:"10vh",color:"white"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>More</a>
-            </h4>
-
-            <p style={{marginLeft:"20vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>Terms</a> 
-            </p>
-
-            <p style={{marginLeft:"20vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>Help</a> 
-            </p>
-
-            <p style={{marginLeft:"20vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}> Privacy</a>
-            </p>
-
-            <p style={{marginLeft:"20vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}> Contact
-            </a></p>
-            
-            <p style={{marginLeft:"20vh",marginTop:"4vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>
-             ©  2020 XYZ, All rights reserved
-             </a>
-             </p>
-        
-
-            <p style={{marginLeft:"50vh",marginTop:"-25vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>Cookies policy
-            </a> </p>
-
-            <p style={{marginLeft:"50vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}> Get the app
-            </a></p>
-
-            <p style={{marginLeft:"50vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>
-            About us
-            </a></p>
-            <p style={{marginLeft:"50vh",marginTop:"1vh"}}>
-            <a href="#" style={{color:"white",textDecoration: "none"}}>
-            Contact us
-            </a></p>
-        
-        
-            <p style={{marginLeft:"80vh",marginTop:"-10vh",color:"white",textDecoration: "none"}}>
-            Follow us : 
-            </p>
-
-            <p style={{marginLeft:"93vh",marginTop:"-6vh"}}>
-            <a href="https://www.facebook.com/" style={{color:"white",textDecoration: "none"}}> fb</a></p>
-
-            <p style={{marginLeft:"99vh",marginTop:"-5vh"}}>
-            <a href="https://www.instagram.com/" style={{color:"white",textDecoration: "none"}}>
-            insta
-            </a></p>
-            
-            <p style={{marginLeft:"105vh",marginTop:"-5vh"}}>
-            <a href="https://www.twitter.com/" style={{color:"white",textDecoration: "none"}}>twi
-            </a>
-            </p>
-        
-            
-        
-            <p style={{marginLeft:"145vh",marginTop:"1vh",color:"white",textDecoration: "none"}}>Designed and Developed by </p>
-            <h4 style={{marginLeft:"151vh",marginTop:"1vh",textDecoration: "none"}}>Scorbits Logo</h4>
+            <div>
+              <p className="copyright">Follow Us On:</p>
+              <a href="#">
+                <i className="fa fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i className="fa fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i className="fa fa-instagram"></i>
+              </a>
+            </div>
+            <div />
+            <div />
+          </div>
         </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            paddingRight: "10vh",
+            marginTop:"5vh",
+            alignItems:"center"
+          }}
+        >
+          <p >© 2020 XYZ, All rights reserved</p>
+          <div >
+            <p className="copyright">Designed and Developed by</p>
+            <img scr="" alt="logo" />
+          </div>
         </div>
-        </>
-
-    );
-}
-
-
+      </footer>
+    </div>
+  );
+};
 export default Footer;
